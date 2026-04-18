@@ -3,11 +3,13 @@ import { Link } from "react-router-dom";
 const Footer = () =>{
     return(
         <>
-        <footer className="bg-gray-300 w-full py-10 px-5">
+        <footer className="bg-orange-600 w-full py-10 px-5">
             <div className="text-center">
-                <Link to="/novasReceitas" className="hover:text-yellow-300 text-2xl">Mande novas receitas aqui!</Link>
+                <Link to="/novasReceitas" className="hover:text-yellow-300 text-2xl">Clique aqui para mandar novas receitas!</Link>
+                
             </div>
-            <div className="ml-20 ">
+            <div className="ml-20 mt-10">
+                <h1 className=""><strong>Integrantes:</strong></h1>
                 <h1 className="">Matheus Guimarães Rosa RM567912</h1>
                 <h1 className="">Manuel Pedro de Gouveia Neto RM567458</h1>
                 <h1 className="">Lucas Shida Rodrigues da Costa RM568194</h1>

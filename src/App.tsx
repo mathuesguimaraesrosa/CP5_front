@@ -9,9 +9,11 @@ import NovasReceitas from "./Pages/NovasReceitas/NovasReceitas";
 import Saladas from "./Pages/Saladas/Saladas";
 import Salgados from "./Pages/Salgados/Salgados";
 
+
 const App = () =>{
   return(
     <>
+      
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout/>}>
