@@ -38,17 +38,17 @@ const Home = () =>{
                     </p> 
                     */}
                     
-                    </div>
+                </div>
                    {/*} <div className="flex-1 hidden md:flex justify-center">
                     <img src="......." alt="Banner" className="max-h-96 object-contain" />
                     </div> */}
-                </div>
+            </div>
                 </header>
                 
                 <section className="py-16 px-6 max-w-6xl mx-auto">
                 <h2 className={`text-3xl font-bold text-center mb-10`}>
                     Qual faz mais sentido pra você no momento?
-                    Escolha entre:
+                    Navegue entre:
                 </h2>
                 <div className="items-center grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20 ">
                     {cards.map((c) => (
@@ -56,7 +56,7 @@ const Home = () =>{
                         <img src={c.alt} alt={c.alt} className="mx-auto w-14 h-14 mb-4 transition-opacity duration-300 group-hover:opacity-0 " />
                         <h3 className="text-primary font-bold text-lg mb-2 group-hover:opacity-0">{c.title}</h3>
                         <p className="text-gray-500 text-sm leading-relaxed group-hover:opacity-0">{c.desc}</p>
-                        <div className="absolute inset-0 bg-accent text-white flex flex-col justify-center items-center p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:text-white hover:bg-orange-600">
+                        <div className="absolute inset-0 bg-accent text-white flex flex-col justify-center items-center p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:text-black hover:bg-orange-600"><h1>Clique e Confira!</h1>
                         {/* <h3 className="font-bold text-lg mb-2">{c.hoverTitle}</h3>
                         <p className="text-sm leading-relaxed">{c.hoverDesc}</p> */}
                         </div>

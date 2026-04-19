@@ -4,7 +4,7 @@ const Header = () =>{
     return(
         <>
         <header className="bg-orange-600 w-full py-10 px-5">
-            <div className="text-center">
+            <div className="flex justify-center items-center gap-8 flex-wrap">
                 <Link to="/" className="pr-10 pl-20 gap-20 text-2xl hover:text-yellow-300">HOME</Link>
                 <Link to="/salgados" className="pr-10 text-2xl hover:text-yellow-300">PRATOS SALGADOS</Link>
                 <Link to="/doces" className="pr-10 text-2xl hover:text-yellow-300">DOCES E SOBREMESAS</Link>

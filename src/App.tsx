@@ -8,6 +8,7 @@ import Login from "./Pages/Login/Login";
 import NovasReceitas from "./Pages/NovasReceitas/NovasReceitas";
 import Saladas from "./Pages/Saladas/Saladas";
 import Salgados from "./Pages/Salgados/Salgados";
+import Receita from "./Pages/Receita/Receita";
 
 
 const App = () =>{
@@ -25,6 +26,7 @@ const App = () =>{
             <Route path="/novasReceitas" element={<NovasReceitas/>} />
             <Route path="/saladas" element={<Saladas/>} />
             <Route path="/salgados" element={<Salgados/>} />
+            <Route path="/receita/:id" element={<Receita />} />
           </Route>
         </Routes>
       </BrowserRouter>
