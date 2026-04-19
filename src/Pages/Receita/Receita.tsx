@@ -1,6 +1,6 @@
 
 import { useParams } from "react-router-dom";
-import { receitasSalgadas } from "../../Data/receitasSalgadas";
+import { receitas } from "../../Data/receitas";
 
 {/*type tipoReceita = {
   id: number;
@@ -14,7 +14,7 @@ import { receitasSalgadas } from "../../Data/receitasSalgadas";
 export default function Receita() {
   const { id } = useParams();
 
-  const receita = receitasSalgadas.find(
+  const receita = receitas.find(
     (item: { id: number; }) => item.id === Number(id)
   );
 
@@ -29,22 +29,22 @@ export default function Receita() {
         src={receita.imagem}
         className="w-full h-80 object-cover"
       />
-
-      <h1 className="text-3xl font-bold mt-4">
+      
+      <h1 className="text-4xl font-bold mt-4">
         {receita.nome}
       </h1>
 
-      <p className="mt-2">{receita.descricao}</p>
+      <p className="mt-2 text-2xl">{receita.descricao}</p>
 
-      <h2 className="mt-6 text-xl font-bold">Ingredientes</h2>
-      <ul className="list-disc ml-6">
+      <h2 className="mt-6 text-3xl font-bold">Ingredientes:</h2>
+      <ul className="list-disc ml-6 text-xl">
         {receita.ingredientes.map((ing, i) => (
           <li key={i}>{ing}</li>
         ))}
       </ul>
 
-      <h2 className="mt-6 text-xl font-bold">Modo de preparo</h2>
-      <ol className="list-decimal ml-6">
+      <h2 className="mt-6 text-3xl font-bold">Modo de preparo:</h2>
+      <ol className="list-decimal ml-6 text-xl">
         {receita.preparo.map((step, i) => (
           <li key={i}>{step}</li>
         ))}
