@@ -683,5 +683,102 @@ export const receitas = [
     imagem: "/public/Bebidas/pinacolada.jpg",
     descricao: "Drink clássico para momentos de descontração",
     ingredientes: ["Rum", "Suco de abacaxi", "leite condensado", "leite de coco", "Gelo"],
-    preparo: ["Coloque gelo no copo", "Adicione Rum", "Adicione suco de abacaxi", "Adicione leite condensado", "Adicione leite de coco"]  }
+    preparo: ["Coloque gelo no copo", "Adicione Rum", "Adicione suco de abacaxi", "Adicione leite condensado", "Adicione leite de coco"]
+  },
+  {
+    id: 76,
+    nome: "Camarão ao alho",
+    imagem: "/public/Entradas/CamarãoAlho.jpg",
+    descricao: "Camarão suculento com molho de alho aromático",
+    ingredientes: ["500g de camarão", "6 dentes de alho", "Azeite", "Sal", "Pimenta", "Salsa fresca"],
+    preparo: ["Descasque o camarão", "Refogue o alho em azeite quente", "Adicione o camarão", "Tempere e cozinhe por 3-4 minutos", "Finalize com salsa fresca"]
+  },
+  {
+    id: 77,
+    nome: "Pão de alho",
+    imagem: "/public/Entradas/PãoAlho.jpg",
+    descricao: "Pão crocante recheado com manteiga e alho",
+    ingredientes: ["Pão francês", "200g de manteiga", "8 dentes de alho picado", "Sal", "Salsa"],
+    preparo: ["Misture manteiga com alho picado", "Distribua na superfície do pão", "Leve ao forno a 180°C por 10 minutos", "Retire e sirva quente"]
+  },
+  {
+    id: 78,
+    nome: "Aipim frito",
+    imagem: "/public/Entradas/Aipim.jpg",
+    descricao: "Aipim crocante por fora e macio por dentro",
+    ingredientes: ["1kg de aipim", "Sal", "Óleo para fritar", "Alho em pó"],
+    preparo: ["Descasque e corte o aipim em palitos", "Cozinhe até ficar macio", "Escorra bem", "Frite em óleo quente até dourar", "Tempere com sal e alho"]
+  },
+  {
+    id: 79,
+    nome: "Batata ao forno com especiarias",
+    imagem: "/public/Entradas/BatataAssada.jpg",
+    descricao: "Batata assada com temperos aromáticos",
+    ingredientes: ["1kg de batata vermelha", "Azeite", "Sal", "Alho", "Orégano", "Pimenta"],
+    preparo: ["Corte a batata em cubos", "Misture com azeite e temperos", "Espalhe numa assadeira", "Asse a 200°C por 30 minutos até dourar"]
+  },
+  {
+    id: 80,
+    nome: "Lula à milanesa",
+    imagem: "/public/Entradas/LulaMilanesa.jpg",
+    descricao: "Lula frita crocante servida com limão",
+    ingredientes: ["500g de lula", "Farinha de trigo", "Ovos", "Sal", "Óleo para fritar", "Limão"],
+    preparo: ["Limpe a lula cortando em anéis", "Passe em farinha, ovo e novamente farinha", "Frite em óleo quente até dourar", "Escorra em papel toalha", "Sirva com limão"]
+  },
+  {
+    id: 81,
+    nome: "Bratwurst grelhada",
+    imagem: "/public/Entradas/bratwurst.jpg",
+    descricao: "Linguiça alemã suculenta e temperada",
+    ingredientes: ["6 bratwursts", "Cebola", "Pimenta vermelha", "Sal", "Pimenta do reino"],
+    preparo: ["Grelhe a bratwurst até dourar", "Refogue a cebola e pimenta em paralelo", "Sirva a bratwurst com legumes grelhados", "Acompanhe com mostarda"]
+  },
+  {
+    id: 82,
+    nome: "Camaraozinho enroladinho",
+    imagem: "/public/Entradas/CamarãoEnrolado.jpg",
+    descricao: "Camarão enrolado em bacon e frito",
+    ingredientes: ["500g de camarão médio", "200g de bacon", "Sal", "Pimenta", "Óleo para fritar"],
+    preparo: ["Limpe os camarões deixando a cauda", "Enrole cada camarão em uma tira de bacon", "Frite em óleo quente até o bacon ficar crocante", "Escorra e sirva quente"]
+  },
+  {
+    id: 83,
+    nome: "Batata palha",
+    imagem: "/public/Entradas/BatataPalha.jpg",
+    descricao: "Palitos de batata crocantes e salgadinhos",
+    ingredientes: ["1kg de batata inglesa", "Sal", "Óleo para fritar"],
+    preparo: ["Corte a batata em palitos bem finitos", "Mergulhe em água gelada por 30 minutos", "Escorra e seque bem", "Frite em óleo quente até dourar", "Tempere com sal grosso"]
+  },
+  {
+    id: 84,
+    nome: "Queijinho assado",
+    imagem: "/public/Entradas/QueijoAssado.jpg",
+    descricao: "Queijo derretido em massa crocante",
+    ingredientes: ["300g de queijo meia cura", "Massa folhada congelada", "Ovo para pincelar", "Sal"],
+    preparo: ["Descongele a massa e corte em quadrados", "Coloque um pedaço de queijo no centro", "Dobre em triângulo selando as bordas", "Pincele com ovo batido", "Asse a 200°C por 15 minutos até dourar"]
+  },
+  {
+    id: 85,
+    nome: "Nachos com guacamole",
+    imagem: "/public/Entradas/Nachos.jpg",
+    descricao: "Tortilla crocante com abacate e cobertura",
+    ingredientes: ["Tortilla de milho", "2 abacates", "Limão", "Cebola", "Coentro", "Sal", "Queijo ralado", "Óleo para fritar"],
+    preparo: ["Frite a tortilla cortada em triângulos até ficar crocante", "Prepare o guacamole amassando abacate com limão, cebola e coentro", "Coloque guacamole sobre os nachos", "Finalize com queijo ralado e coentro"]
+  },
+  {
+    id: 86,
+    nome: "Costela suína assada",
+    imagem: "/public/Entradas/Costela.jpg",
+    descricao: "Costela macia com tempero caseiro",
+    ingredientes: ["1kg de costela suína", "Alho", "Cebola", "Sal", "Pimenta", "Azeite", "Vinagre"],
+    preparo: ["Tempere a costela com sal, pimenta e alho", "Coloque em assadeira com cebola", "Asse a 180°C por 1 hora", "Regue com vinagre e azeite durante o cozimento", "Sirva quente cortada em pedaços"]
+  },
+  {
+    id: 87,
+    nome: "Abacaxi caramelizado",
+    imagem: "/public/Entradas/Abacaxi.jpg",
+    descricao: "Abacaxi grelhado com açúcar caramelizado",
+    ingredientes: ["1 abacaxi médio", "Açúcar", "Manteiga", "Canela", "Noz-moscada"],
+    preparo: ["Descasque e corte o abacaxi em rodelas", "Grelhe as rodelas até marcar", "Polvilhe açúcar e deixar caramelizar", "Tempere com canela e noz-moscada", "Sirva ainda quente com sorvete de baunilha"]
+  }
 ];
