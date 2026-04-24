@@ -5,7 +5,7 @@ const Footer = () =>{
         <>
         <footer className="bg-orange-600 w-full py-10 px-5">
             <div className="text-center">
-                <Link to="/novasReceitas" className="hover:text-yellow-300 text-2xl">Clique aqui para enviar suas receitas!</Link>
+                <Link to="/entradas" className="hover:text-yellow-300 text-2xl">Clique aqui para enviar suas receitas!</Link>
                 
             </div>
             <div className="ml-20 mt-10">

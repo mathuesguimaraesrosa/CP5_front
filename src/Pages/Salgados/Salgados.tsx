@@ -20,19 +20,19 @@ const Salgados = () =>{
                     Pratos Salgados 👇
                 </h1>
 
-                <div className="grid grid-cols-3 gap-6 ">
+                <div className="grid grid-cols-3 gap-6">
 
                     {receitas.map((item) => {
                         if(item.id <= 21){
                             return(
-                                <Link to={`/receita/${item.id}`} key={item.id} className="bg-white p-4 rounded-xl shadow border-2 border-orange-600">
+                                <Link to={`/receita/${item.id}`} key={item.id} className="bg-white p-4 rounded shadow">
 
                                     <img
                                     src={item.imagem}
-                                    className="w-full h-40 object-cover rounded-lg shadow-xl"
+                                    className="w-full h-40 object-cover"
                                     />
 
-                                    <h2 className="font-bold mt-2 ">
+                                    <h2 className="font-bold mt-2">
                                     {item.nome}
                                     </h2>
 

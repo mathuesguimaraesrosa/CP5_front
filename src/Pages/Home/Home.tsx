@@ -5,12 +5,12 @@ import Banner from '../../Components/Banner/Banner';
 
 
 const cards = [
-  { icon: '/Cards/bbbb-removebg-preview.png', alt: '/Public/Cards/bbbb-removebg-preview.png', title: 'Pratos Salgados', desc: 'Receitas salgadas para você divorciar do ifood!!!' ,link:'/salgados' },
-  { icon: '/Cards/aaaa-removebg-preview.png', alt: 'Public/Cards/aaaa-removebg-preview.png', title: 'Pratos doces', desc: 'Receitas doces para te engordar pra caralho!!!', link:'/doces' },
+  { icon: '/Cards/pratos-salgados.png', alt: '/Public/Cards/pratos-salgados.png', title: 'Pratos Salgados', desc: 'Receitas salgadas para você divorciar do ifood!!!' ,link:'/salgados' },
+  { icon: '/Cards/pratos-doces.png', alt: 'Public/Cards/pratos-doces.png', title: 'Pratos doces', desc: 'Receitas doces para te engordar pra caralho!!!', link:'/doces' },
   { icon: '/Cards/pratos-salada.png', alt: 'Public/Cards/pratos-salada.png', title: 'Saladas', desc: 'Área dos veganos!!!', link:'/saladas' },
-  { icon: '/Cards/image-removebg-preview.png', alt: 'Public/Cards/image-removebg-preview.png', title: 'Drinks & Bebidas', desc: 'Drinks para você esquecer até seu nome!!!', link:'/bebidas' },
-  { icon: '/Cards/ee-removebg-preview.png', alt: 'Public/Cards/ee-removebg-preview.png', title: 'Entradas', desc: 'Entradas simples e rápidas!!!', link:'/Entradas' },
-  { icon: '/Cards/para-secar.jpg', alt: 'Public/Cards/para-secar.jpg', title: 'Receitas Fit', desc: 'Para secar!!!', link:'/ReceitasFit' },
+  { icon: '/Cards/drinks.png', alt: 'Public/Cards/drinks.png', title: 'Drinks & Bebidas', desc: 'Drinks para você esquecer até seu nome!!!', link:'/bebidas' },
+  { icon: '/Cards/novas-receitas.jpg', alt: 'Public/Cards/novas-receitas.jpg', title: 'Enviar Receita', desc: 'Compartilhe uma receita típica para futuras atualizações do site.', link:'/entradas' },
+  { icon: '/Cards/para-secar.jpg', alt: 'Public/Cards/para-secar.jpg', title: 'Receitas Fit', desc: 'Para secar!!!' },
   ]
 
 
@@ -24,7 +24,7 @@ const Home = () =>{
                 <div className="max-w-6xl mx-auto w-full flex flex-col md:flex-row items-center gap-10">
                     <div className="flex-1 text-white">
                     <h2 className="text-accent uppercase tracking-[10px] text-sm font-semibold mb-3">
-                        Fotos de nossas receitas! 👇
+                        Passe para o lado 👇
                     </h2>
                     <div>
                         <Banner />
