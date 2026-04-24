@@ -782,17 +782,17 @@ export const receitas = [
     preparo: ["Descasque e corte o abacaxi em rodelas", "Grelhe as rodelas até marcar", "Polvilhe açúcar e deixar caramelizar", "Tempere com canela e noz-moscada", "Sirva ainda quente com sorvete de baunilha"]
   },
   {
-    "id": 88,
-    "nome": "Frango grelhado com legumes",
-    "imagem": "public/Fit/FrangoLegumes.jpg",
-    "descricao": "Leve e rico em proteína",
-    "ingredientes": [
+    id: 88,
+    nome: "Frango grelhado com legumes",
+    imagem: "public/Fit/FrangoLegumes.jpg",
+    descricao: "Leve e rico em proteína",
+    ingredientes: [
       "Peito de frango",
       "Brócolis",
       "Cenoura",
       "Sal"
     ],
-    "preparo": [
+    preparo: [
       "Tempere o frango",
       "Grelhe até dourar",
       "Cozinhe os legumes",
@@ -800,159 +800,159 @@ export const receitas = [
     ]
   },
   {
-    "id": 89,
-    "nome": "Omelete proteico",
-    "imagem": "public/Fit/omeleteProteico.jpg",
-    "descricao": "Rápido e nutritivo",
-    "ingredientes": [
+    id: 89,
+    nome: "Omelete proteico",
+    imagem: "public/Fit/omeleteProteico.jpg",
+    descricao: "Rápido e nutritivo",
+    ingredientes: [
       "Ovos",
       "Espinafre",
       "Tomate"
     ],
-    "preparo": [
+    preparo: [
       "Bata os ovos",
       "Adicione os ingredientes",
       "Frite em frigideira antiaderente"
     ]
   },
   {
-    "id": 90,
-    "nome": "Panqueca de aveia",
-    "imagem": "Public/Fit/panquecaAveia.jpg",
-    "descricao": "Café da manhã saudável",
-    "ingredientes": [
+    id: 90,
+    nome: "Panqueca de aveia",
+    imagem: "Public/Fit/panquecaAveia.jpg",
+    descricao: "Café da manhã saudável",
+    ingredientes: [
       "Aveia",
       "Ovo",
       "Banana"
     ],
-    "preparo": [
+    preparo: [
       "Misture tudo",
       "Coloque na frigideira",
       "Asse dos dois lados"
     ]
   },
   {
-    "id": 91,
-    "nome": "Salada de frango fitness",
-    "imagem": "Public/Fit/saladaFrangoFit.jpg",
-    "descricao": "Leve e proteica",
-    "ingredientes": [
+    id: 91,
+    nome: "Salada de frango fitness",
+    imagem: "Public/Fit/saladaFrangoFit.jpg",
+    descricao: "Leve e proteica",
+    ingredientes: [
       "Frango desfiado",
       "Alface",
       "Tomate"
     ],
-    "preparo": [
+    preparo: [
       "Misture todos os ingredientes",
       "Tempere a gosto"
     ]
   },
   {
-    "id": 92,
-    "nome": "Arroz integral com legumes",
-    "imagem": "Public/Fit/arrozFit.jpg",
-    "descricao": "Mais saudável que o tradicional",
-    "ingredientes": [
+    id: 92,
+    nome: "Arroz integral com legumes",
+    imagem: "Public/Fit/arrozFit.jpg",
+    descricao: "Mais saudável que o tradicional",
+    ingredientes: [
       "Arroz integral",
       "Cenoura",
       "Ervilha"
     ],
-    "preparo": [
+    preparo: [
       "Cozinhe o arroz",
       "Adicione os legumes",
       "Misture"
     ]
   },
   {
-    "id": 93,
-    "nome": "Batata doce assada",
-    "imagem": "Public/Fit/batataAssada.jpg",
-    "descricao": "Fonte de energia",
-    "ingredientes": [
+    id: 93,
+    nome: "Batata doce assada",
+    imagem: "Public/Fit/batataAssada.jpg",
+    descricao: "Fonte de energia",
+    ingredientes: [
       "Batata doce",
       "Azeite",
       "Sal"
     ],
-    "preparo": [
+    preparo: [
       "Corte a batata",
       "Tempere",
       "Leve ao forno até dourar"
     ]
   },
   {
-    "id": 94,
-    "nome": "Iogurte com frutas",
-    "imagem": "Public/Fit/iogurt.jpg",
-    "descricao": "Leve e refrescante",
-    "ingredientes": [
+    id: 94,
+    nome: "Iogurte com frutas",
+    imagem: "Public/Fit/iogurt.jpg",
+    descricao: "Leve e refrescante",
+    ingredientes: [
       "Iogurte natural",
       "Morango",
       "Banana"
     ],
-    "preparo": [
+    preparo: [
       "Corte as frutas",
       "Misture com iogurte",
       "Sirva gelado"
     ]
   },
   {
-    "id": 95,
-    "nome": "Smoothie de frutas",
-    "imagem": "Public/Fit/smoothie.jpg",
-    "descricao": "Bebida saudável",
-    "ingredientes": [
+    id: 95,
+    nome: "Smoothie de frutas",
+    imagem: "Public/Fit/smoothie.jpg",
+    descricao: "Bebida saudável",
+    ingredientes: [
       "Banana",
       "Morango",
       "Água"
     ],
-    "preparo": [
+    preparo: [
       "Bata tudo",
       "Sirva gelado"
     ]
   },
   {
-    "id": 96,
-    "nome": "Peixe grelhado",
-    "imagem": "Public/Fit/peixeFit.jpg",
-    "descricao": "Rico em proteína e leve",
-    "ingredientes": [
+    id: 96,
+    nome: "Peixe grelhado",
+    imagem: "Public/Fit/peixeFit.jpg",
+    descricao: "Rico em proteína e leve",
+    ingredientes: [
       "Filé de peixe",
       "Limão",
       "Sal"
     ],
-    "preparo": [
+    preparo: [
       "Tempere o peixe",
       "Grelhe dos dois lados",
       "Sirva"
     ]
   },
   {
-    "id": 97,
-    "nome": "Wrap integral",
-    "imagem": "Public/Fit/wrapFit.jpg",
-    "descricao": "Prático e saudável",
-    "ingredientes": [
+    id: 97,
+    nome: "Wrap integral",
+    imagem: "Public/Fit/wrapFit.jpg",
+    descricao: "Prático e saudável",
+    ingredientes: [
       "Pão integral",
       "Frango",
       "Alface"
     ],
-    "preparo": [
+    preparo: [
       "Monte o wrap",
       "Enrole",
       "Sirva"
     ]
   },
   {
-    "id": 98,
-    "nome": "Salada de grão-de-bico",
-  "imagem": "Public/Fit/saladaGraoFit.jpg",
-  "descricao": "Rica em proteína vegetal",
-  "ingredientes": [
+    id: 98,
+    nome: "Salada de grão-de-bico",
+    imagem: "Public/Fit/saladaGraoFit.jpg",
+    descricao: "Rica em proteína vegetal",
+    ingredientes: [
     "Grão-de-bico",
     "Tomate",
     "Cebola",
     "Azeite"
   ],
-  "preparo": [
+  preparo: [
     "Cozinhe o grão-de-bico",
     "Corte os legumes",
     "Misture tudo",
@@ -960,17 +960,17 @@ export const receitas = [
   ]
   },
   {
-    "id": 99,
-    "nome": "Frango desfiado com batata doce",
-  "imagem": "Public/Fit/frangoFitcomBatata.jpg",
-  "descricao": "Equilíbrio perfeito de proteína e energia",
-  "ingredientes": [
+    id: 99,
+    nome: "Frango desfiado com batata doce",
+    imagem: "Public/Fit/frangoFitcomBatata.jpg",
+    descricao: "Equilíbrio perfeito de proteína e energia",
+    ingredientes: [
     "Frango desfiado",
     "Batata doce",
     "Sal",
     "Azeite"
   ],
-  "preparo": [
+  preparo: [
     "Cozinhe a batata doce",
     "Desfie o frango",
     "Misture os ingredientes",
@@ -978,17 +978,17 @@ export const receitas = [
   ]
   },
   {
-    "id": 100,
-    "nome": "Crepioca de frango",
-  "imagem": "Public/Fit/crepiocaFrangoFit.jpg",
-  "descricao": "Leve, proteica e ótima para o dia a dia",
-  "ingredientes": [
+    id: 100,
+    nome: "Crepioca de frango",
+    imagem: "Public/Fit/crepiocaFrangoFit.jpg",
+    descricao: "Leve, proteica e ótima para o dia a dia",
+    ingredientes: [
     "Ovo",
     "Goma de tapioca",
     "Frango desfiado",
     "Sal"
   ],
-  "preparo": [
+  preparo: [
     "Misture o ovo com a tapioca",
     "Coloque na frigideira",
     "Adicione o frango",
