@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Banner() {
 
@@ -20,8 +20,16 @@ export default function Banner() {
     setIndex((prev) => (prev - 1 + imagens.length) % imagens.length);
   };
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      proximo();
+    }, 3000); // 3 segundos
+
+    return () => clearInterval(interval); // limpa quando muda
+  }, []);
+
   return (
-    <div className="relative w-full h-[70vh] overflow-hidden">
+    <div className="relative w-full h-[70vh] overflow-hidden rounded-2xl shadow-xl">
       
       <img
         src={imagens[index]}
