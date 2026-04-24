@@ -10,6 +10,7 @@ import Saladas from "./Pages/Saladas/Saladas";
 import Salgados from "./Pages/Salgados/Salgados";
 import Receita from "./Pages/Receita/Receita";
 import FitReceitas from "./Pages/ReceitasFit/ReceitasFit";
+import NovasReceitas from "./Pages/NovasReceitas/NovasReceitas";
 
 
 const App = () =>{
@@ -29,6 +30,7 @@ const App = () =>{
             <Route path="/salgados" element={<Salgados/>} />
             <Route path="/ReceitasFit" element={<FitReceitas/>} />
             <Route path="/receita/:id" element={<Receita />} />
+            <Route path="/novasReceitas" element={<NovasReceitas />} />
           </Route>
         </Routes>
       </BrowserRouter>
