@@ -25,11 +25,11 @@ const FitReceitas = () =>{
                     {receitas.map((item) => {
                         if(item.id >= 88 && item.id <= 100){
                             return(
-                                <Link to={`/receita/${item.id}`} key={item.id} className="bg-white p-4 rounded shadow">
+                                <Link to={`/receita/${item.id}`} key={item.id} className="bg-white p-4 rounded-xl shadow border-2 border-orange-600">
 
                                     <img
                                     src={item.imagem}
-                                    className="w-full h-40 object-cover"
+                                    className="w-full h-40 object-cover rounded-lg shadow-xl"
                                     />
 
                                     <h2 className="font-bold mt-2">
