@@ -784,7 +784,7 @@ export const receitas = [
   {
     id: 88,
     nome: "Frango grelhado com legumes",
-    imagem: "public/Fit/FrangoLegumes.jpg",
+    imagem: "/Public/Fit/FrangoLegumes.jpg",
     descricao: "Leve e rico em proteína",
     ingredientes: [
       "Peito de frango",
@@ -802,7 +802,7 @@ export const receitas = [
   {
     id: 89,
     nome: "Omelete proteico",
-    imagem: "public/Fit/omeleteProteico.jpg",
+    imagem: "/Public/Fit/omeleteProteico.jpg",
     descricao: "Rápido e nutritivo",
     ingredientes: [
       "Ovos",
@@ -818,7 +818,7 @@ export const receitas = [
   {
     id: 90,
     nome: "Panqueca de aveia",
-    imagem: "Public/Fit/panquecaAveia.jpg",
+    imagem: "/Public/Fit/panquecaAveia.jpg",
     descricao: "Café da manhã saudável",
     ingredientes: [
       "Aveia",
@@ -834,7 +834,7 @@ export const receitas = [
   {
     id: 91,
     nome: "Salada de frango fitness",
-    imagem: "Public/Fit/saladaFrangoFit.jpg",
+    imagem: "/Public/Fit/saladaFrangoFit.jpg",
     descricao: "Leve e proteica",
     ingredientes: [
       "Frango desfiado",
@@ -849,7 +849,7 @@ export const receitas = [
   {
     id: 92,
     nome: "Arroz integral com legumes",
-    imagem: "Public/Fit/arrozFit.jpg",
+    imagem: "/Public/Fit/arrozFit.jpg",
     descricao: "Mais saudável que o tradicional",
     ingredientes: [
       "Arroz integral",
@@ -865,7 +865,7 @@ export const receitas = [
   {
     id: 93,
     nome: "Batata doce assada",
-    imagem: "Public/Fit/batataAssada.jpg",
+    imagem: "/Public/Fit/batataAssada.jpg",
     descricao: "Fonte de energia",
     ingredientes: [
       "Batata doce",
@@ -881,7 +881,7 @@ export const receitas = [
   {
     id: 94,
     nome: "Iogurte com frutas",
-    imagem: "Public/Fit/iogurt.jpg",
+    imagem: "/Public/Fit/iogurt.jpg",
     descricao: "Leve e refrescante",
     ingredientes: [
       "Iogurte natural",
@@ -897,7 +897,7 @@ export const receitas = [
   {
     id: 95,
     nome: "Smoothie de frutas",
-    imagem: "Public/Fit/smoothie.jpg",
+    imagem: "/Public/Fit/smoothie.jpg",
     descricao: "Bebida saudável",
     ingredientes: [
       "Banana",
@@ -912,7 +912,7 @@ export const receitas = [
   {
     id: 96,
     nome: "Peixe grelhado",
-    imagem: "Public/Fit/peixeFit.jpg",
+    imagem: "/Public/Fit/peixeFit.jpg",
     descricao: "Rico em proteína e leve",
     ingredientes: [
       "Filé de peixe",
@@ -928,7 +928,7 @@ export const receitas = [
   {
     id: 97,
     nome: "Wrap integral",
-    imagem: "Public/Fit/wrapFit.jpg",
+    imagem: "/Public/Fit/wrapFit.jpg",
     descricao: "Prático e saudável",
     ingredientes: [
       "Pão integral",
@@ -944,7 +944,7 @@ export const receitas = [
   {
     id: 98,
     nome: "Salada de grão-de-bico",
-    imagem: "Public/Fit/saladaGraoFit.jpg",
+    imagem: "/Public/Fit/saladaGraoFit.jpg",
     descricao: "Rica em proteína vegetal",
     ingredientes: [
     "Grão-de-bico",
@@ -962,7 +962,7 @@ export const receitas = [
   {
     id: 99,
     nome: "Frango desfiado com batata doce",
-    imagem: "Public/Fit/frangoFitcomBatata.jpg",
+    imagem: "/Public/Fit/frangoFitcomBatata.jpg",
     descricao: "Equilíbrio perfeito de proteína e energia",
     ingredientes: [
     "Frango desfiado",
@@ -980,7 +980,7 @@ export const receitas = [
   {
     id: 100,
     nome: "Crepioca de frango",
-    imagem: "Public/Fit/crepiocaFrangoFit.jpg",
+    imagem: "/Public/Fit/crepiocaFrangoFit.jpg",
     descricao: "Leve, proteica e ótima para o dia a dia",
     ingredientes: [
     "Ovo",

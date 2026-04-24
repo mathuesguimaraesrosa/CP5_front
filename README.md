@@ -1,3 +1,8 @@
+# Matheus Guimarães Rosa rm567912
+# Pedro Henrique Pinheiro Falchi rm566967
+# Manuel Pedro de Gouveia Neto rm567458
+# Lucas Shida Rodrigues da Costa rm568194
+
 # 🍽️ Sabores do Front
 
 Um site moderno de receitas desenvolvido com **React + Vite + Tailwind CSS**, focado em experiência visual, organização por categorias e navegação fluida.

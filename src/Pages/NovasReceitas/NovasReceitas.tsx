@@ -23,7 +23,7 @@ const NovasReceitas = () => {
   return (
     <>
       
-      <section className="py-16 px-6 max-w-2xl mx-auto">
+      <section className="py-16 px-6 max-w-2xl mx-auto min-h-[64.7vh]">
         <div className="bg-white rounded-2xl shadow-md p-8 md:p-12">
           {enviado ? (
             <div className="text-center py-8">
