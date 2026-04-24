@@ -1,4 +1,3 @@
-
 import { receitas } from "../../Data/receitas";
 import { Link } from "react-router-dom";
 
@@ -12,19 +11,19 @@ import { Link } from "react-router-dom";
   </div>
 ))}
 
-const Bebidas = () =>{
+const FitReceitas = () =>{
     return(
         <>
             <div className="p-6">
 
                 <h1 className="text-2xl font-bold mb-6 text-center">
-                    Bebidas e Drinks 👇
+                    Receitas Fit 👇
                 </h1>
 
                 <div className="grid grid-cols-3 gap-6">
 
                     {receitas.map((item) => {
-                        if(item.id >= 64 && item.id <= 75){
+                        if(item.id >= 88 && item.id <= 100){
                             return(
                                 <Link to={`/receita/${item.id}`} key={item.id} className="bg-white p-4 rounded shadow">
 
@@ -48,4 +47,4 @@ const Bebidas = () =>{
         </>
     )
 }
-export default Bebidas;
+export default FitReceitas;

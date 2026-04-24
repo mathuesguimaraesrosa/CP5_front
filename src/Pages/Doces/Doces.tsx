@@ -17,7 +17,7 @@ const Doces = () =>{
             <div className="p-6">
 
                 <h1 className="text-2xl font-bold mb-6 text-center">
-                    Pratos Salgados 👇
+                    Pratos Doces 👇
                 </h1>
 
                 <div className="grid grid-cols-3 gap-6">

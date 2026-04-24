@@ -9,8 +9,8 @@ const cards = [
   { icon: '/Cards/aaaa-removebg-preview.png', alt: 'Public/Cards/aaaa-removebg-preview.png', title: 'Pratos doces', desc: 'Receitas doces para te engordar pra caralho!!!', link:'/doces' },
   { icon: '/Cards/pratos-salada.png', alt: 'Public/Cards/pratos-salada.png', title: 'Saladas', desc: 'Área dos veganos!!!', link:'/saladas' },
   { icon: '/Cards/image-removebg-preview.png', alt: 'Public/Cards/image-removebg-preview.png', title: 'Drinks & Bebidas', desc: 'Drinks para você esquecer até seu nome!!!', link:'/bebidas' },
-  { icon: '/Cards/ee-removebg-preview.png', alt: 'Public/Cards/ee-removebg-preview.png', title: 'Entradas', desc: 'Entradas simples e rápidas!!!', link:'/novasReceitas' },
-  { icon: '/Cards/para-secar.jpg', alt: 'Public/Cards/para-secar.jpg', title: 'Receitas Fit', desc: 'Para secar!!!' },
+  { icon: '/Cards/ee-removebg-preview.png', alt: 'Public/Cards/ee-removebg-preview.png', title: 'Entradas', desc: 'Entradas simples e rápidas!!!', link:'/Entradas' },
+  { icon: '/Cards/para-secar.jpg', alt: 'Public/Cards/para-secar.jpg', title: 'Receitas Fit', desc: 'Para secar!!!', link:'/ReceitasFit' },
   ]
 
 
