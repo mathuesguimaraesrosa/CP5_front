@@ -24,7 +24,7 @@ const Home = () =>{
                 <div className="max-w-6xl mx-auto w-full flex flex-col md:flex-row items-center gap-10">
                     <div className="flex-1 text-white">
                     <h2 className="text-accent uppercase tracking-[10px] text-sm font-semibold mb-3">
-                        Passe para o lado 👇
+                        Fotos de nossas receitas! 👇
                     </h2>
                     <div>
                         <Banner />
