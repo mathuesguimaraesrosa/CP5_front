@@ -1,119 +1,156 @@
-import { useForm, type SubmitHandler } from "react-hook-form";
-import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+import { useForm } from "react-hook-form";
+import { Link } from "react-router-dom";
 
-type FormValues ={
-  nome : string;
-  sobrenome : string;
+type CadastroForm = {
+  nome: string;
   email: string;
-  senha : string;
-  confSenha : string;
-  termos : boolean;
-}
-
-const CriarConta = () =>{
-
-  const { register, watch, handleSubmit, formState : {  errors } } = useForm<FormValues>();
-  const navigate = useNavigate();
-  
-  const Enviar: SubmitHandler<FormValues> = (data) => {
-  const usuario = {
-    nome: data.nome,
-    sobrenome: data.sobrenome,
-    email: data.email,
-    senha: data.senha
-  };
-
-  localStorage.setItem("user", JSON.stringify(usuario));
-
-  console.log("✅ Usuário cadastrado:", usuario);
-  alert("Conta criada com sucesso!");
-  navigate("/login");
+  senha: string;
 };
 
-  const senha = watch("senha");
+const CriarConta = () => {
+  const [mensagemSucesso, setMensagemSucesso] = useState("");
 
-  const inputClass = `
-    w-full px-4 py-3 mb-5 bg-gray-50 border border-gray-200 rounded-lg text-sm text-gray-700
-    focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent/20 focus:bg-white transition-all duration-200`;
-  return(
-    <>
-    <section className="py-16 px-6 max-w-2xl mx-auto min-h-[65vh]">
-      <div className="bg-white rounded-2xl shadow-md p-8 md:p-12">
-        <form onSubmit={ handleSubmit(Enviar) }>
-          <div>
-            <label  htmlFor="nome">Nome:</label>
-            <input className={inputClass} { ...register(
-              "nome", { 
-                required : true 
-              }, ) } />
-            { errors.nome && <span style={{ color:"#f00" }}>Campo nome é obrigatório!</span> }
-          </div>
-          <div>
-            <label htmlFor="sobrenome">Sobrenome:</label>
-            <input className={inputClass} { ...register(
-              "sobrenome", { 
-                required : "Campo sobrenome é obrigatório!",
-              }) } />
-            { errors.sobrenome && <span style={{ color:"#f00" }}>{ errors.sobrenome.message }</span> }
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm<CadastroForm>();
+
+  const cadastrarUsuario = (dados: CadastroForm) => {
+    console.log("Usuário cadastrado:", dados);
+
+    setMensagemSucesso(`Conta criada com sucesso, ${dados.nome}!`);
+    reset();
+  };
+
+  return (
+     <main className="min-h-screen bg-[url('/Banners/fundo-cadastro.png')] bg-cover bg-center bg-no-repeat px-4 py-10">
+      <section className="mx-auto flex min-h-[80vh] max-w-6xl items-center justify-center">
+        <div className="w-full max-w-md rounded-2xl bg-white p-6 shadow-2xl sm:p-8">
+          <h1 className="text-center text-3xl font-bold text-orange-600">
+            Criar Conta
+          </h1>
+
+          <p className="mt-2 text-center text-gray-600">
+            Cadastre-se para salvar e enviar suas receitas favoritas.
+          </p>
+
+          <div className="mt-6 space-y-3">
+            <button className="w-full rounded-full bg-blue-700 py-3 font-bold text-white transition hover:bg-blue-800">
+              Cadastre-se com o Facebook
+            </button>
+
+            <button className="w-full rounded-full bg-red-500 py-3 font-bold text-white transition hover:bg-red-600">
+              Cadastre-se com o Google
+            </button>
           </div>
 
-          <div>
-            <label htmlFor="email">Email:</label>
-            <input className={inputClass} { ...register("email", { 
-              required : "O email é obrigatório!",
-              pattern :{
-                value : /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-                message : "Digite um email válido!"
-              }
-              
-            }) } />
-            { errors.email && <span style={{ color:"#f00" }}>{ errors.email.message }</span> }
+          <div className="my-6 flex items-center gap-4">
+            <span className="h-px flex-1 bg-gray-300"></span>
+            <span className="font-semibold text-gray-600">Ou</span>
+            <span className="h-px flex-1 bg-gray-300"></span>
           </div>
-          <div>
-            <label>Senha: </label>
-            <input className={inputClass} type="password"
-              { ...register("senha",{
-                required : "A senha é obrigatória!",
-                minLength : { value : 6, message : "Mínimo de 6 caracteres" },
-                validate : value =>
-                  !/[A-Z]/.test(value) ? "Deve conter letras maíusculas!" :
-                  !/[a-z]/.test(value) ? "Deve conter letras minúsculas!" :
-                  !/\d/.test(value) ? "Deve conter um número!" :
-                  !/[^A-Za-z0-9]/.test(value) ? "Deve conter um caracter especial!" :
-                  true
-              }) }
-            />
-            { errors.senha && <span style={{ color:"#f00" }}>{ errors.senha.message }</span> }
-          </div>
-          <div>
-            <label>Confirmação de Senha: </label>
-            <input className={inputClass} type="password"
-              { ...register("confSenha",{
-                required : "A Confirmação da Senha é obrigatória!",
-                validate : (value) =>
-                  value === senha || "As senhas não coincidem!"
-              })}
-            />
-            { errors.confSenha && <span style={{ color:"#f00" }}>{ errors.confSenha.message }</span> }
-          </div>
-          <div>
-            <input type="checkbox"
-              { ...register("termos",{
-                required : "Termos é obrigatório"
-              })}
-            />
-            <label>Termos</label>
-            { errors.termos && <span style={{ color:"#f00" }}>{ errors.termos.message }</span> }
-          </div>
-          <div>
-            <input type="submit" className="w-full px-4 py-3 bg-blue-600 text-white border border-gray-200 rounded-lg text-sm " />
-          </div>
-          
-        </form>
-      </div>
-    </section>
-      
-    </>
-  )
-}
+
+          {mensagemSucesso && (
+            <p className="mb-4 rounded-lg bg-green-100 p-3 text-center font-medium text-green-700">
+              {mensagemSucesso}
+            </p>
+          )}
+
+          <form onSubmit={handleSubmit(cadastrarUsuario)} className="space-y-5">
+            <div>
+              <label className="mb-2 block font-bold text-gray-800">
+                Nome
+              </label>
+              <input
+                type="text"
+                placeholder="Digite seu nome"
+                className="w-full rounded-lg border border-gray-300 p-3 outline-none focus:border-orange-500"
+                {...register("nome", {
+                  required: "O nome é obrigatório.",
+                  minLength: {
+                    value: 3,
+                    message: "Digite pelo menos 3 caracteres.",
+                  },
+                })}
+              />
+              {errors.nome && (
+                <p className="mt-1 text-sm text-red-600">
+                  {errors.nome.message}
+                </p>
+              )}
+            </div>
+
+            <div>
+              <label className="mb-2 block font-bold text-gray-800">
+                E-mail
+              </label>
+              <input
+                type="email"
+                placeholder="exemplo@email.com"
+                className="w-full rounded-lg border border-gray-300 p-3 outline-none focus:border-orange-500"
+                {...register("email", {
+                  required: "O e-mail é obrigatório.",
+                  pattern: {
+                    value: /^\S+@\S+\.\S+$/,
+                    message: "Digite um e-mail válido.",
+                  },
+                })}
+              />
+              {errors.email && (
+                <p className="mt-1 text-sm text-red-600">
+                  {errors.email.message}
+                </p>
+              )}
+            </div>
+
+            <div>
+              <label className="mb-2 block font-bold text-gray-800">
+                Senha
+              </label>
+              <input
+                type="password"
+                placeholder="Mínimo de 8 caracteres"
+                className="w-full rounded-lg border border-gray-300 p-3 outline-none focus:border-orange-500"
+                {...register("senha", {
+                  required: "A senha é obrigatória.",
+                  minLength: {
+                    value: 8,
+                    message: "A senha deve ter no mínimo 8 caracteres.",
+                  },
+                  pattern: {
+                    value: /^(?=.*[A-Za-z])(?=.*\d).+$/,
+                    message: "A senha deve conter letras e números.",
+                  },
+                })}
+              />
+              {errors.senha && (
+                <p className="mt-1 text-sm text-red-600">
+                  {errors.senha.message}
+                </p>
+              )}
+            </div>
+
+            <button
+              type="submit"
+              className="w-full rounded-full bg-orange-500 py-3 text-lg font-bold text-white transition hover:bg-orange-600"
+            >
+              Cadastrar
+            </button>
+          </form>
+
+          <p className="mt-6 text-center font-medium text-gray-700">
+            Já possui uma conta?{" "}
+            <Link to="/login" className="font-bold text-orange-600 hover:underline">
+              Entrar.
+            </Link>
+          </p>
+        </div>
+      </section>
+    </main>
+  );
+};
+
 export default CriarConta;
