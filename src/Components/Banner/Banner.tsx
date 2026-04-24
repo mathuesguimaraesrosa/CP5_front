@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Banner() {
 
@@ -11,6 +11,7 @@ export default function Banner() {
   ];
 
   const [index, setIndex] = useState(0);
+  const [fade, setFade] = useState(true);
 
   const proximo = () => {
     setIndex((prev) => (prev + 1) % imagens.length);
@@ -20,12 +21,24 @@ export default function Banner() {
     setIndex((prev) => (prev - 1 + imagens.length) % imagens.length);
   };
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setFade(false);
+      setTimeout(() => {
+      setIndex((prev) => (prev + 1) % imagens.length);
+      setFade(true);
+    }, 300);
+    }, 3000); // 3 segundos
+
+    return () => clearInterval(interval);
+}, [imagens.length]);
+
   return (
-    <div className="relative w-full h-[70vh] overflow-hidden">
+    <div className="relative w-full h-[70vh] overflow-hidden rounded-2xl shadow-xl">
       
       <img
         src={imagens[index]}
-        className="w-full h-full object-cover"
+        className={`w-full h-full object-cover transition-opacity duration-500 ${fade ? "opacity-100 scale-110" : "opacity-0 scale-110"}`}
         alt="Banner"
       />
 

@@ -27,7 +27,7 @@ export default function Receita() {
 
       <img
         src={receita.imagem}
-        className="w-full h-80 object-cover"
+        className="w-full h-80 object-cover rounded-lg shadow-x1"
       />
       
       <h1 className="text-4xl font-bold mt-4">
